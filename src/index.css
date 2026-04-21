@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Hex values */
+  --cream: #F7F4EF;
+  --ink: #1C1A17;
+  --muted: #7A7570;
+  --surface: #F2EDE6;
+  --card: #FFFFFF;
+  --accent: #C4956A;
+  --accent-light: #F0E6D8;
+  --border: rgba(28, 26, 23, 0.12);
+
+  /* RGB channel variants for Tailwind opacity support */
+  --cream-rgb: 247 244 239;
+  --ink-rgb: 28 26 23;
+  --muted-rgb: 122 117 112;
+  --surface-rgb: 242 237 230;
+  --card-rgb: 255 255 255;
+  --accent-rgb: 196 149 106;
+  --accent-light-rgb: 240 230 216;
+
+  /* Profile accent colors */
+  --profile-1: #5C8FAB;
+  --profile-1-rgb: 92 143 171;
+  --profile-2: #C4607A;
+  --profile-2-rgb: 196 96 122;
+  --profile-3: #8B7BAB;
+  --profile-3-rgb: 139 123 171;
+  --profile-4: #6B9E7A;
+  --profile-4-rgb: 107 158 122;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+/* Border default */
+.border, [class*="border-"] {
+  border-color: var(--border);
+}
+
+/* Utility for 0.5px borders */
+.border-thin {
+  border-width: 0.5px;
+}
