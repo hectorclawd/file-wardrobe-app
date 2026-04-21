@@ -161,7 +161,6 @@ export function Closet() {
               ref={fileInputRef}
               type="file"
               accept="image/*"
-              capture="environment"
               className="sr-only"
               onChange={e => { const f = e.target.files?.[0]; if (f) handleFile(f) }}
             />
